@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage project</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .card-body {
+            background-color: #94c9ff; /* Custom background color */
+            color: black; /* Text color */
+        }
+        nav {
+            background-color: #94c9ff; /* Navbar background color */
+            color: black; /* Navbar text color */
+            height: 5em;
+            margin-bottom: 0%;
+        }
+        #navlist:hover{
+            color: orangered;
+            border-left: 2px solid orange;
+            border-right: 2px solid orange;
+            transition: 1.5ms;
+        }
+        #social{
+            display: inline-flex;
+        }
+        .social_list{
+            margin-right: 20px; 
+        }
+        #contact{
+            margin-left: 5em;
+            color: blue;
+        }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <a class="navbar-brand" href="#">PEN TOOL ARTWORK</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" >
+                <li class="nav-item active">
+                    <a class="nav-link" id="navlist" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="navlist" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="navlist" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="navlist" href="#">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="navlist" href="#">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="productCarousel" class="carousel slide mt-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#productCarousel" data-slide-to="1"></li>
+            <li data-target="#productCarousel" data-slide-to="2"></li>
+            <li data-target="#productCarousel" data-slide-to="3"></li>
+            <li data-target="#productCarousel" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.jpg" class="d-block w-100" alt="Product 1">
+            </div>
+            <div class="carousel-item">
+                <img src="2.jpg" class="d-block w-100" alt="Product 2">
+            </div>
+            <div class="carousel-item">
+                <img src="3.jpg" class="d-block w-100" alt="Product 3">
+            </div>
+            <div class="carousel-item">
+                <img src="4.jpg" class="d-block w-100" alt="Product 4">
+            </div>
+            <div class="carousel-item">
+                <img src="5.jpg" class="d-block w-100" alt="Product 5">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Review Section -->
+    <div class="container mt-5">
+        <h2 class="text-center">Customer Reviews</h2>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">HARI</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, cupiditate.</p>
+                        <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">surya</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, cupiditate.</p>
+                        <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet.</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">siva</h5>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, cupiditate.</p>
+                        <p class="card-text"><small class="text-muted">Lorem ipsum dolor sit amet.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5  class="text-primary">PAYMENT DETAILS</h5>
+                    <p class="text-warning">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis similique quis culpa nostrum facere corrupti laborum officiis inventore dolor recusandae quas cupiditate amet dolorum enim ducimus, saepe maxime, deserunt magni!
+                    </p>
+                </div>
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0" id="contact">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <ul class="list-unstyled" id="social" class="social_list">
+                        <li class="social_list"><a href="#" class="text-warning">Facebook</a></li>
+                        <li class="social_list"><a href="#" class="text-warning">Twitter</a></li>
+                        <li class="social_list"><a href="#" class="text-warning">Instagram</a></li>
+                        <li class="social_list"><a href="#" class="text-warning">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 PEN TOOL ARTWORK. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
